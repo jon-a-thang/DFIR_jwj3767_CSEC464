@@ -133,4 +133,5 @@ dir $deskLoc | ft LastWriteTime, Name
 #C:\Users\User\Desktop\ListArtifactsPowerShell.ps1 | Export-Csv -Path "C:\Users\User\Desktop\artifacts.csv"
 #C:\Users\User\Desktop\ListArtifactsPowerShell.ps1 | Out-File "C:\Users\User\Desktop\artifacts.csv"
 }
-$result | Tee-Object -file "C:\Users\User\Desktop\artifacts.csv" -Append
+$desktopLoc = [Environment]::GetFolderPath("Desktop")
+$result | Tee-Object -file "$desktopLoc\artifacts.csv" -Append
