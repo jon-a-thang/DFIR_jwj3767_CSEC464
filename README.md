@@ -4,3 +4,4 @@ Computer System Forensics Lab 1
     - listArtifacts.sh (Bash Script)
     - ListArtifactsPowerShell.ps1 (PowerShell Script)
 Computer System Forensics Lab 2
+ - Files:
